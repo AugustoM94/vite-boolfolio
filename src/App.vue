@@ -28,6 +28,7 @@ export default {
       axios.get(store.apiUrl + "/projects", { params: { page: this.currentPage } })
         .then((res) => {
           this.projects = res.data.result.data;
+          console.log(this.projects);
           this.currentPage = res.data.current_page;
           this.lastPage = res.data.last_page;
         })
