@@ -48,7 +48,7 @@ p {
   font-size: 1.6rem;
   line-height: 1.6;
 }
-#app{
-    background-color: #5bc0de;
-}
+
+   
+
 </style>

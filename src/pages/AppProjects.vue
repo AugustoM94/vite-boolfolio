@@ -47,9 +47,7 @@ export default {
 
 <style lang="scss" scoped>
 
-.bg-blu{
-    background-color: #5bc0de;
-}
+
 
 
 

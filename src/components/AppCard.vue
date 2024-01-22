@@ -6,7 +6,7 @@
             </router-link>
             <p class="card-text">{{ project.body }}</p>
             <div class="card-meta">
-                <p class="card-date">{{ project.link }}</p>
+                <a class="card-date">{{ project.link }}</a>
                 <span class="card-category">{{ project.category }}</span>
             </div>
         </div>
@@ -30,13 +30,7 @@ export default {
 
 <style lang="scss" >
 
-.card{
-    background-color: white;
-}
 
-.card-body{
-    color: black;
-}
 
 
 

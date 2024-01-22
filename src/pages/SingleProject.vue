@@ -1,8 +1,11 @@
 <template>
-    <div v-if="project">
-        <h1>{{ project.title }}</h1>
-        <img :src="`${store.imgPath}${project.image}`" :alt="project.title">
-    </div>
+    <section class="container">
+        <div v-if="project">
+            <h1>{{ project.title }}</h1>
+        </div>
+
+    </section>
+
 </template>
 
 <script>
@@ -19,7 +22,7 @@ export default {
     methods: {
         getPostData() {
             console.log(this.$route);
-            axios.get(`${this.store.apiUrl}projects/${this.$route.params.slug}`).then((res) => {
+            axios.get(`${this.store.apiUrl}/projects/${this.$route.params.slug}`).then((res) => {
                 console.log(res.data)
                 if (res.data.results) {
                     this.post = res.data.results
