@@ -6,7 +6,7 @@ import NotFound from "./src/pages/NotFound.vue";
 
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(),
     routes: [
         {
             path: "/",
@@ -20,7 +20,7 @@ const router = createRouter({
         },
         {
             path: "/projects/:slug",
-            name: "single-post",    
+            name: "single-project",    
             component: SingleProject
 
         },
