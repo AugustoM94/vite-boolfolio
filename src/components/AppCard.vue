@@ -1,13 +1,11 @@
 <template>
     <div class="card h-100" style="width: 21rem;">
         <div class="card-body">
-            <router-link :to="{ name: 'single-project', params: { slug: project.slug } }">
+            <router-link :to="{ name: 'single-project', params: { slug: project.slug } }" class="text-black text-decoration-none ">
                 <h5 class="card-title">{{ project.title }}</h5>
             </router-link>
-            <p class="card-text">{{ project.body }}</p>
             <div class="card-meta">
-                <a class="card-date">{{ project.link }}</a>
-                <span class="card-category">{{ project.category }}</span>
+                <a class="card-date text-decoration-none">{{ project.link }}</a>
             </div>
         </div>
     </div>
@@ -29,9 +27,6 @@ export default {
 </script>
 
 <style lang="scss" >
-
-
-
 
 
 </style>

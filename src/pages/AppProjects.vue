@@ -31,8 +31,8 @@ export default {
     methods: {
         getAllProjects() {
             axios.get(`${this.store.apiUrl}/projects`).then((res) => {
-                console.log(res.data);
                 this.store.projects = res.data.result;
+              console.log(this.store.projects);
             }).catch((err) => {
 
             })
@@ -46,8 +46,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
 
 
 
