@@ -1,6 +1,6 @@
 <template>
-    <div class="container text-center">
-        <h1>Benvenuti nel mio BoolFolio</h1>
+    <div class=" image">
+        <h2 class="text-white">Benvenuti nel mio BoolFolio</h2>
     </div>
 </template>
 
@@ -30,4 +30,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.image{
+    background-image: url(../assets/images/sfondo.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-color: #1A1C1E;
+    border: none;
+}
 </style>

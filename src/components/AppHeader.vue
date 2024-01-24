@@ -15,7 +15,6 @@
               <li class="nav-item" v-for="item in menu" :key="index">
                   <router-link class="nav-link active" :to="{ name: item.name }">{{ item.label }}</router-link>
               </li>
-  					<li><a href="#" class="nav-item nav-link">Contact</a></li>
   				</ul>
   			</div>
   		</div>
@@ -41,6 +40,11 @@ export default {
                 label: "Projects",
                 name: 'projects',
                 },
+                {
+                  label: "Contacts",
+                  name: 'contacts',
+
+                }
              ]
         };
     },
@@ -110,7 +114,7 @@ export default {
 .header-area {
   position: relative;
   height: 15vh;
-  background: #5bc0de;
+  background:#907E61;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repear;

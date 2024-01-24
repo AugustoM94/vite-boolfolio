@@ -1,6 +1,5 @@
 <template>
-    <section class="bg-blu">
-    <main class="container">
+    <main class="container ">
         <h1>Project List</h1>
         <div class="row">
             <div class="col-12 col-md-4 col-lg-4 p-2 " v-for="project in store.projects" :key="project.id">
@@ -9,7 +8,6 @@
 
         </div>
     </main>
-    </section>
 </template>
 
 <script>
