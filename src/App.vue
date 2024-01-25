@@ -1,9 +1,8 @@
 <template >
-    <AppHeader></AppHeader>
-    <main>
+    <AppHeader />
+    <main class="vh-100 my-container">
          <router-view></router-view>     
     </main>
-    <footer></footer>
 </template>
 
 <script>

@@ -1,8 +1,11 @@
 <template>
-    <div class="container p-3 ">
-        <h1>Contact Us</h1>
-        <ContactForm />
-    </div>
+    <section class="contact-form">
+        <div class="container p-3 ">
+            <h1>Contact Us</h1>
+            <ContactForm />
+        </div>
+
+    </section>
 </template>
 
 <script>
@@ -19,5 +22,7 @@ import { store } from "../store";
 </script>
 
 <style lang="scss" scoped>
-
+.contact-form{
+     background-color: rgba($color: #655844, $alpha: 0.6);
+}
 </style>

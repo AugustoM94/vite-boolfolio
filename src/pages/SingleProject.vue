@@ -1,16 +1,25 @@
 <template>
-    <main class="container">
+    <main class="container d-flex justify-content-center mt-2 ">
         <div v-if="project">
-            <div class="card">
-                <h1>{{ project.title }}</h1>
-                <p>{{ project.body }}</p>
-                <p>Category: {{ project.category.name }}</p>
-                <p>Technology: {{ project.technologies[0].name }} </p>
-                <a :href="project.link" target="_blank">Visit Project</a>
+            <div class="card border-0 shadow" style="max-width: 30rem;">
+                <div class="card-body">
+                    <h1 class="card-title">{{ project.title }}</h1>
+                    <p class="card-text">{{ project.body }}</p>
+                    <p class="card-text"><small class="text-muted">Category: {{ project.category.name }}</small></p>
+                    <ul class="list-unstyled">
+                        <li class="ms-3" v-for="item in project.technologies" :key="item.id">
+                            {{ item.name }} <i :class="item.icon"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a :href="project.link" target="_blank" class="btn btn-primary">Visit Project</a>
+                </div>
             </div>
         </div>
     </main>
 </template>
+
 
 <script>
 import axios from 'axios';
@@ -21,7 +30,7 @@ export default {
     data() {
         return {
             store,
-            project: null,
+            project: {},
         }
     },
     methods: {

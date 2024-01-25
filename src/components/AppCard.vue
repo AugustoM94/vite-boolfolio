@@ -5,9 +5,9 @@
                 <router-link :to="{ name: 'single-project', params: { slug: project.slug } }" class="text-black text-decoration-none ">
                     <h5 class="card-title">{{ project.title }}</h5>
                 </router-link>
-                <div class="card-meta">
-                    <a class="card-date text-decoration-none">{{ project.link }}</a>
-                </div>
+                    <ul class="list-unstyled">
+                            <li class="ms-3" v-for="item in this.project.technologies" :key="item.id">{{ item.name }} <i :class="item.icon"></i></li>
+                    </ul>
             </div>
         </div>
     </main>
